@@ -1,0 +1,40 @@
+* {
+  box-sizing: border-box;
+  text-align: center;
+  padding: 25px;
+  margin: 25px;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: var(--primary);
+}
+
+:root {
+  --primary: #f9fbfd;;
+  --secondary: #3cdcf5;
+  font-size: 30px;
+}
+
+#container{
+    display: none;
+}
+
+ul li {
+    display:inline-table;
+    display:inline;
+}
+
+#container {
+    border: 1px solid green;
+}
+
+#container li {
+    display: inline-block;
+}
+
+#container li {
+    display: inline-block;
+    background: #444;
+    color: #FFF;
+}
