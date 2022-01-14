@@ -3,14 +3,16 @@ let timeLeft = 0;
 let timeInterval;
 let score = 0;
 
+
 var questionTextEl = document.querySelector("#question-text");
 var questionChoicesEl = document.querySelector("#question-choices");
 var questionAnswersEl = document.querySelector("#prev-question-answer");
 var userScore = document.querySelector("#showscores");
-
+var displayStartPage = document.querySelector("#start-screen");
 
 function initData() {
     //show only start page
+
     resetQuestionElements();
 
     quizObject = [];
@@ -143,7 +145,6 @@ function startQuiz() {
     initData();
     setQuestion(0);
 
-
 }
 
 
@@ -193,8 +194,6 @@ function getAnswer(question_id, choice_id) {
     }
 
     setQuestion(next_question_id);
-
-
 
     questionAnswersEl.append(quizObject[question_id].answer);
 }

@@ -13,7 +13,7 @@
 
 body {
   font-family: sans-serif;
-  background-color: whitesmoke;
+ background: linear-gradient(#f9fbfd, #0f0f0f);
   width: 800px;
   padding: 40px;
   margin: 0 auto;
@@ -69,5 +69,5 @@ ul li {
 
 #container li {
     display: inline-block;
-    color: #FFF;
+   color: #FFF;
 }
