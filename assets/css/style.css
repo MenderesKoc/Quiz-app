@@ -8,7 +8,7 @@
 :root {
   --primary: #f9fbfd;
   --secondary: #3cdcf5;
-  font-size: 30px;
+  font-size: 20px;
 }
 
 body {
@@ -49,7 +49,7 @@ button {
   text-transform: uppercase;
   cursor: pointer;
   border-radius: 10px;
-  font-size: 20px;
+  font-size: 15px;
 }
 
 button:hover {
