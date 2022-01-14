@@ -112,7 +112,7 @@ function initData() {
         {
             "id": 4,
             "question": "How do we declare a conditional statement in JavaScript?",
-            
+
             "choices": [{
                 "text": "	if...else",
                 "is_correct": true
@@ -163,7 +163,7 @@ function setQuestion(question_id) {
                 list.setAttribute('onclick', "getAnswer(" + quizObject[i].id + "," + j + ")");
                 list.appendChild(textnode);
                 questionChoicesEl.appendChild(list);
-                
+
             }
 
         }
