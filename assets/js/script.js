@@ -1,6 +1,5 @@
 var quizObject = [];
-let timeLeft = 0;
-let timeInterval;
+let timeLeft = 10;
 let score = 0;
 
 
@@ -9,6 +8,7 @@ var questionChoicesEl = document.querySelector("#question-choices");
 var questionAnswersEl = document.querySelector("#prev-question-answer");
 var userScore = document.querySelector("#showscores");
 var displayStartPage = document.querySelector("#start-screen");
+var quizTimer = document.getElementById("timer");
 
 function initData() {
     //show only start page
@@ -140,16 +140,27 @@ function initData() {
     console.log("questiions are ready. Quiz reset !");
 }
 
-function startQuiz() {
 
-    initData();
-    setQuestion(0);
+function startQuiz() {
+    //close start page here with display none
+    document.getElementById("start-screen").onclick = function () {
+        document.getElementById("start-screen").style.display = "none";
+    }
+
+    //Timer
+    timerInterval = setInterval(function () {
+
+        quizTimer.textContent = "" + timeLeft;
+        timeLeft--;
+        if (timeLeft === 0) {
+            clearInterval(timerInterval);
+            userScore.textContent = "" + userScore;
+        }
+    }, 1000);
 
 }
 
-
 function setQuestion(question_id) {
-    //close start page here with display none
 
     for (i = 0; i < (quizObject).length; i++) {
         if (quizObject[i].id == question_id) {
