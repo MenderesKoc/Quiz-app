@@ -30,7 +30,7 @@ THEN I can save my initials and score
 ```
 ## Some link For Documentation HTML.CSS.jAVASCRIPT.JSON
 
-[W3C javasScript](https://www.w3schools.com/js/js_loop_for.asp)
+[W3C javaScript](https://www.w3schools.com/js/js_loop_for.asp)
 
 [HTML Cheat Sheet](https://websitesetup.org/wp-content/uploads/2019/10/WSU-HTML-Cheat-Sheet.pdf)
 
