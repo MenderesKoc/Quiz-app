@@ -9,11 +9,13 @@
 </head>
 
 <body>
+    <!--Score and timer section-->
     <div id="head">
         <div id="showscores">High Scores</div>
         <div class="time-container">Time Left: <span id="timer"></span></div>
     </div>
 
+    <!--start page section-->
     <div class="start page" id="start-screen">
         <h1>
             Coding Quiz Challenge
@@ -26,11 +28,13 @@
             worry,you can try as many times as you want!
         </p>
 
+        <!--start button section-->
         <button onclick="startQuiz()">
             Click Here!
         </button>
     </div>
 
+    <!--questions section-->
     <div class="container page" id="question-wrapper">
         <h1 id="question-text">
         </h1>
@@ -41,8 +45,13 @@
         </h1>
     </div>
 
-    <script src="./assets/js/script.js"></script>
+    <div id="endQuiz">
+        <div id="finalScore"></div>
+        <input type="text" size="40" placeholder="Enter your score" name="intials" id="initials" />
+        <button id="submitScore">Submit Score</button>
+    </div>
 
+    <script src="./assets/js/script.js"></script>
 </body>
 
 </html>
