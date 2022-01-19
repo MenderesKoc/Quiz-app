@@ -7,7 +7,7 @@
 
 ## Images
 
-![This is an image](/assets/images/screenshot.png)
+![ScreenShot](/assets/images/screenshot.png)
 
 ## User Story
 
