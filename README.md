@@ -1,8 +1,13 @@
 
 ## Web APIs: Code Quiz
-[link Code Quiz](https://mendereskoc.github.io/Quiz-app//)
+[let's go to website](https://mendereskoc.github.io/Quiz-app//)
 
  Build a timed code quiz with multiple-choice questions. This app will run in the browser and feature dynamically updated HTML and CSS powered by your JavaScript code. It will also feature a clean and polished user interface and be responsive, ensuring that it adapts to multiple screen sizes.
+
+
+## Images
+
+![This is an image](/assets/images/screenshot.png)
 
 ## User Story
 
