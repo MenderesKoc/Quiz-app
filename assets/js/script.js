@@ -146,24 +146,23 @@ function initData() {
 function startQuiz() {
     initData();
 
-
     //close start page here with display none
     document.getElementById("start-screen").onclick = function () {
         document.getElementById("start-screen").style.display = "none";
-
     }
 
     setQuestion(0);
     //Timer
 
     timerInterval = setInterval(function () {
-
-        quizTimer.textContent = "" + timeLeft;
         timeLeft--;
+        quizTimer.textContent = "Time Left : " + timeLeft;
+
         if (timeLeft === 0) {
             clearInterval(timerInterval);
-            userScore.textContent = "" + userScore;
+            endQuiz();
         }
+
     }, 1000);
 
 }
